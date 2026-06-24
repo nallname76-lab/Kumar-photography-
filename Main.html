@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karthik Raja — Video Editor Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">KUMAR <span>PHOTOGRAPHY</span></div>
+  <div class="navlinks">
+    <a href="#about">Patri</a>
+    <a href="#work">Work</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="timecode" id="timecode">00:00:00:00</div>
+  <h1 class="hero-title">Cuts that<br>carry the<br>feeling.</h1>
+  <p class="hero-sub">Video editor — reels, weddings, brand films, music videos. Chennai based.</p>
+  <p class="hero-tamil">Raw footage-ah kadhaiya maathura editor.</p>
+  <div class="scroll-cue"><span>Scroll</span><div class="bar"></div></div>
+</section>
+
+<section class="about" id="about">
+  <div>
+    <div class="eyebrow">Patri / About</div>
+    <h2>Timeline-la than naan vaazhven.</h2>
+    <p>6 varusham aaguthu editing field-la. Premiere Pro, After Effects, DaVinci Resolve — moonu tools-um en kaila comfortable. Wedding highlight-a irundhu, Instagram reels-a irundhu, brand ad-a irundhu — pacing-um emotion-um than priority.</p>
+  </div>
+  <div class="stat-strip">
+    <div class="stat"><div class="n">600+</div><div class="l">Projects edited</div></div>
+    <div class="stat"><div class="n">6</div><div class="l">Years editing</div></div>
+    <div class="stat"><div class="n">3</div><div class="l">Tools mastered</div></div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="gallery-head">
+    <div>
+      <div class="eyebrow">Work / Reel</div>
+      <h2>Selected cuts</h2>
+    </div>
+    <div class="filter">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="wedding">Wedding</button>
+      <button data-filter="reels">Reels</button>
+      <button data-filter="brand">Brand</button>
+      <button data-filter="music">Music Video</button>
+    </div>
+  </div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section class="services" id="services">
+  <div class="eyebrow">Services / Vilai</div>
+  <h2 class="services-title">Packages</h2>
+  <div class="svc-list">
+    <div class="svc">
+      <div class="no">01</div>
+      <div><h3>Wedding Highlight</h3><p>3-5 min cinematic edit, color grade, sound design.</p></div>
+      <div class="price">₹15,000</div>
+    </div>
+    <div class="svc">
+      <div class="no">02</div>
+      <div><h3>Instagram Reels (Pack of 5)</h3><p>15-60 sec each, trending cuts, captions, transitions.</p></div>
+      <div class="price">₹6,000</div>
+    </div>
+    <div class="svc">
+      <div class="no">03</div>
+      <div><h3>Brand Film</h3><p>2-4 min, scripting support, motion graphics included.</p></div>
+      <div class="price">₹25,000</div>
+    </div>
+    <div class="svc">
+      <div class="no">04</div>
+      <div><h3>Music Video</h3><p>Full edit with beat-sync, VFX, color grade.</p></div>
+      <div class="price">₹20,000</div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div>
+    <div class="eyebrow">Contact</div>
+    <h2>Let's cut something good.</h2>
+    <p class="lead">Unga footage ready-a irundha, keezha form fill pannunga. 24 hours-ku reply pannuven.</p>
+  </div>
+  <form id="contactForm">
+    <div class="field">
+      <input type="text" id="name" placeholder=" " required>
+      <label for="name">Your name</label>
+    </div>
+    <div class="field">
+      <input type="tel" id="phone" placeholder=" " required>
+      <label for="phone">Phone number</label>
+    </div>
+    <div class="field">
+      <select id="projectType">
+        <option value="">Select project type</option>
+        <option value="wedding">Wedding Highlight</option>
+        <option value="reels">Instagram Reels</option>
+        <option value="brand">Brand Film</option>
+        <option value="music">Music Video</option>
+      </select>
+      <label for="projectType">Project type</label>
+    </div>
+    <div class="field">
+      <textarea id="message" rows="3" placeholder=" " required></textarea>
+      <label for="message">Tell me about your project</label>
+    </div>
+    <button type="submit" class="send-btn">Send enquiry</button>
+    <div class="form-msg" id="formMsg"></div>
+  </form>
+</section>
+
+<footer>
+  <div>© 2026 Karthik Raja, Chennai.</div>
+  <div>Instagram · YouTube · WhatsApp</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
